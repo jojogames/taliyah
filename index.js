@@ -24,7 +24,7 @@ bot.on('message', message => {
         message.reply("Pong");
         console.log("Commande Ping effectué");
     }
-  if (message.content.startsWith('!play')) {
+  if (message.content.startsWith('*play')) {
     // On récupère le premier channel audio du serveur
     let voiceChannel = message.guild.channels
       .filter(function (channel) { return channel.type === 'voice' })
